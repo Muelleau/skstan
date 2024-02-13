@@ -31,13 +31,13 @@ Defaults.itSettings
 lazy val root = project.in(file(".")).configs(IntegrationTest)
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules"     %% "scala-parser-combinators" % "1.1.2",
+  "org.scala-lang.modules"     %% "scala-parser-combinators" % "2.2.0",
   "org.scala-lang"             %  "scala-reflect"            % scalaVersion.value,
-  "com.nrinaudo"               %% "kantan.csv"               % "0.6.0",
-  "com.lihaoyi"                %% "sourcecode"               % "0.2.1",
-  "com.typesafe.scala-logging" %% "scala-logging"            % "3.9.2",
-  "org.scalatest"              %% "scalatest"                % "3.0.8" % "test,it",
-  "ch.qos.logback"             % "logback-classic"           % "1.2.3" % "test,it" 
+  "com.nrinaudo"               %% "kantan.csv"               % "0.7.0",
+  "com.lihaoyi"                %% "sourcecode"               % "0.3.0",
+  "com.typesafe.scala-logging" %% "scala-logging"            % "3.9.5",
+  "org.scalatest"              %% "scalatest"                % "3.2.15" % "test,it",
+  "ch.qos.logback"             % "logback-classic"           % "1.4.7" % "test,it"
 )
 
 libraryDependencies ++= {
